@@ -1,0 +1,26 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-center {
+  display: grid;
+  justify-content: center;
+}
+
+.margin-left-right-3 {
+  margin: 0 3rem;
+}
+
+.margin-top-bottom-1 {
+  margin: 2.5rem 0;
+}
+
+.margin-topBottom {
+  margin: 1rem 0;
+}
+
+.margin-center {
+  margin: 0 auto;
+}

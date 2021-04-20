@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "metropolisbold";
+  src: url("../../fontFamily/bold-webfont.woff2") format("woff2"),
+    url("../../fontFamily/bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "metropolisregular";
+  src: url("../../fontFamily/regular-webfont.woff2") format("woff2"),
+    url("../../fontFamily/regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "metropolissemi_bold";
+  src: url("../../fontFamily/semibold-webfont.woff2") format("woff2"),
+    url("../../fontFamily/semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "metropolisextra_light";
+  src: url("../../fontFamily/thin-webfont.woff2") format("woff2"),
+    url("../../fontFamily/thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "metropolisregular";
+  color: #777;
+}

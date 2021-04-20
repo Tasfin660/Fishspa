@@ -1,0 +1,212 @@
+.footer {
+    width: 100%;
+    padding: 8rem 0;
+    background-image: linear-gradient(darken($blue, 25), darken($blue, 40));
+
+    &__nav {
+        display: flex;
+        margin-bottom: 2.5rem;
+        flex-wrap: wrap;
+
+        /** 400px / 16 = 25em */
+        @media only screen and (max-width: 25em) {
+            width: 80%;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__links {
+
+        &:link,
+        &:visited {
+            display: block;
+            color: $blue;
+            text-decoration: none;
+            font-size: 1.3rem;
+            background-color: white;
+            border-radius: 10rem;
+            padding: 0 1rem;
+            box-shadow: 0 2rem 4rem rgba(black, .05);
+            transition: all .2s;
+
+            &:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+        }
+
+        &:active,
+        &:hover {
+            box-shadow: 0 2rem 4rem rgba(black, .2);
+            transform: scale(1.06);
+        }
+
+        margin-bottom: 1.3rem;
+    }
+
+    &__copyright {
+        color: white;
+        font-size: 1.3rem;
+        width: 35rem;
+        text-align: justify;
+
+        /** 700px / 16 = 43.75em */
+        @media only screen and (max-width: 43.75em) {
+            width: 30rem;
+        }
+
+        /** 600px / 16 = 37.5em */
+        @media only screen and (max-width: 37.5em) {
+            margin: .8rem auto;
+        }
+    }
+
+    &__copy {
+        font-family: "metropolissemi_bold";
+
+        /** 600px / 16 = 37.5em */
+        @media only screen and (max-width: 37.5em) {
+            text-align: start;
+        }
+    }
+
+    &__description {
+        margin: 1rem 0;
+        text-align: justify;
+    }
+
+    &__apps {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 13rem;
+            margin: 2rem 2rem 0 0;
+            box-shadow: 0 2rem 4rem rgba(black, .2);
+            cursor: pointer;
+
+            /** 800px / 16 = 50em */
+            @media only screen and (max-width: 50em) {
+                width: 10rem;
+            }
+        }
+
+        /** 600px / 16 = 37.5em */
+        @media only screen and (max-width: 37.5em) {
+            justify-content: center;
+        }
+    }
+
+    &__follow {
+        font-family: "metropolissemi_bold";
+        font-size: 1.8rem;
+        color: white;
+        margin-top: -1rem;
+
+        /** 600px / 16 = 37.5em */
+        @media only screen and (max-width: 37.5em) {
+            display: none;
+        }
+    }
+
+    &__social {
+        display: flex;
+        margin: 1rem 0 2rem 0;
+
+
+
+        svg {
+            width: 2.2rem;
+            height: 2.2rem;
+            fill: $blue;
+            margin-right: 1.2rem;
+            background-color: white;
+            border-radius: 4px;
+            padding: .4rem;
+
+            /** 800px / 16 = 50em */
+            @media only screen and (max-width: 50em) {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+
+    &__logo {
+        width: 20rem;
+        margin-left: 3.35rem;
+
+        /** 1450px / 16 = 90.625em */
+        @media only screen and (max-width: 90.625em) {
+            margin-left: 3rem;
+            width: 18rem;
+        }
+
+        /** 1200px / 16 = 75em */
+        @media only screen and (max-width: 75em) {
+            margin-left: 5rem;
+            width: 17rem;
+        }
+    }
+}
+
+.footer-container {
+    width: 120rem;
+    margin: 0 auto;
+    grid-template-columns: 1fr 30rem 1fr;
+
+    /** 1450px / 16 = 90.625em */
+    @media only screen and (max-width: 90.625em) {
+        width: 110rem;
+    }
+
+    /** 1200px / 16 = 75em */
+    @media only screen and (max-width: 75em) {
+        width: 100rem;
+    }
+
+    /** 1000px / 16 = 62.5em */
+    @media only screen and (max-width: 62.5em) {
+        grid-template-columns: 1fr 1fr;
+        width: 80rem;
+    }
+
+    /** 800px / 16 = 50em */
+    @media only screen and (max-width: 50em) {
+        width: 70rem;
+    }
+
+    /** 650px / 16 = 40.625em */
+    @media only screen and (max-width: 40.625em) {
+        width: 65rem;
+    }
+
+    /** 600px / 16 = 37.5em */
+    @media only screen and (max-width: 37.5em) {
+        grid-template-columns: 1fr;
+        grid-gap: 5rem;
+    }
+
+    /** 500px / 16 = 31.25em */
+    @media only screen and (max-width: 37.5em) {
+        width: 100%;
+    }
+}
+
+.footer__info {
+
+    /** 600px / 16 = 37.5em */
+    @media only screen and (max-width: 37.5em) {
+        margin: 0 auto;
+    }
+}
+
+.footer__mid {
+
+    /** 1000px / 16 = 62.5em */
+    @media only screen and (max-width: 62.5em) {
+        display: none;
+    }
+}

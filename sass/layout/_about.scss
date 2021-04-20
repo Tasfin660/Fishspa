@@ -1,0 +1,195 @@
+.about {
+  grid-template-columns: 50rem 45rem;
+  align-items: center;
+  grid-gap: 10rem;
+
+  /** 1100px / 16 = 68.75em */
+  @media only screen and (max-width: 68.75em) {
+    grid-gap: 6rem;
+  }
+
+  /** 1000px / 16 = 62.5em */
+  @media only screen and (max-width: 62.5em) {
+    grid-gap: 4rem;
+  }
+
+  /** 950px / 16 = 59.375em */
+  @media only screen and (max-width: 59.375em) {
+    grid-template-columns: 50rem;
+    grid-gap: 0rem;
+  }
+
+  /** 500px / 16 = 31.25em */
+  @media only screen and (max-width: 31.25em) {
+    grid-template-columns: max-content;
+  }
+
+  &__app-box {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+
+    /** 450px / 16 = 28.125em */
+    @media only screen and (max-width: 28.125em) {
+      justify-content: center;
+    }
+  }
+
+  &__app-title {
+    grid-column: 1/-1;
+    font-size: 3rem;
+    color: $blue-light;
+    position: relative;
+    white-space: nowrap;
+
+    &:after {
+      position: absolute;
+      content: "";
+      height: 4px;
+      width: 6rem;
+      border-radius: 10rem;
+      background-image: linear-gradient(to right, $blue-light, $blue);
+      bottom: -0.5rem;
+      left: 0;
+    }
+  }
+
+  &__app {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 0.7rem 3rem 0.7rem 0.85rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right,
+        darken($blue-light, 6%),
+        darken($blue, 4%));
+    cursor: pointer;
+    box-shadow: 0 1rem 2rem rgba(black, 0.1);
+
+    /** 450px / 16 = 28.125em */
+    @media only screen and (max-width: 28.125em) {
+      padding: 0.7rem 2rem 0.7rem 0.85rem;
+      border-radius: .8rem;
+    }
+  }
+
+  &__app-icon-box {
+    padding: 0.55rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(rgba(#eee, 0.2), rgba(#eee, 0.2));
+    box-shadow: 0 2px 8px rgba(black, 0.1);
+
+    /** 450px / 16 = 28.125em */
+    @media only screen and (max-width: 28.125em) {
+      border-radius: .8rem;
+    }
+  }
+
+  &__app-icon {
+    width: 1.7rem;
+    height: 1.7rem;
+    fill: white;
+
+    /** 450px / 16 = 28.125em */
+    @media only screen and (max-width: 28.125em) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &__app-name {
+    font-family: "metropolissemi_bold";
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 1.2rem;
+    transform: translateY(1px);
+
+    /** 450px / 16 = 28.125em */
+    @media only screen and (max-width: 28.125em) {
+      font-size: 1.6rem;
+      margin-left: 1rem;
+    }
+  }
+
+  &__header {
+    font-family: "metropolisbold";
+    font-size: 3.2rem;
+    color: $font-color;
+    margin-top: 3rem;
+    text-transform: capitalize;
+
+    /** 450px / 16 = 28.125em */
+    @media only screen and (max-width: 28.125em) {
+      font-size: 2.8rem;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    color: #666;
+    margin: 1rem 0 2rem 0;
+    width: 90%;
+
+    /** 950px / 16 = 59.375em */
+    @media only screen and (max-width: 59.375em) {
+      margin: 1rem 0;
+    }
+
+    /** 450px / 16 = 28.125em */
+    @media only screen and (max-width: 28.125em) {
+      text-align: center;
+      font-size: 1.3rem;
+      line-height: 1.4;
+    }
+
+    /** 400px / 16 = 25em */
+    @media only screen and (max-width: 25em) {
+      width: 80%;
+      margin: 1rem auto;
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    height: max-content;
+    transform: translateY(2.5rem);
+
+    /** 500px / 16 = 31.25em */
+    @media only screen and (max-width: 31.25em) {
+      width: 40rem;
+      margin: 0 auto;
+    }
+
+    /** 450px / 16 = 28.125em */
+    @media only screen and (max-width: 28.125em) {
+      width: 30rem;
+    }
+  }
+
+  &__figure {
+    padding: 0.4rem;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: white;
+    border: 2px solid $blue-light;
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+  }
+}
+
+.about-left {
+
+  /** 500px / 16 = 31.25em */
+  @media only screen and (max-width: 31.25em) {
+    width: 40rem;
+  }
+}

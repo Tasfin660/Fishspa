@@ -1,0 +1,42 @@
+.feature {
+  &__icon-box {
+    background-image: linear-gradient(darken($blue-light, 5%),
+        darken($blue, 4%));
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    box-shadow: 0 3px 8px rgba(black, .18);
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+  }
+
+  &__name {
+    font-family: "metropolisbold";
+    text-transform: uppercase;
+    color: $font-color;
+    font-size: 2rem;
+    margin-left: 1.3rem;
+    white-space: nowrap;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 6rem;
+      background-color: $blue-light;
+      bottom: -.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-top: 1.8rem;
+  }
+}

@@ -1,0 +1,181 @@
+.section-about {
+  padding: 8rem 0;
+}
+
+.section-product {
+  padding: 8rem 0;
+  grid-template-columns: repeat(4, 28rem);
+  grid-gap: 6rem;
+  background-color: #eef6ff;
+
+  background-image: linear-gradient(rgba(#eef6ff, .85), rgba(#eef6ff, .85)), url('../../img/background/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /** 1400px / 16 = 87.5em */
+  @media only screen and (max-width: 87.5em) {
+    grid-template-columns: repeat(2, 28rem);
+  }
+
+  /** 650px / 16 = 40.625em */
+  @media only screen and (max-width: 40.625em) {
+    grid-template-columns: 28rem;
+  }
+}
+
+.section-feature {
+  padding: 8rem 0;
+  grid-template-columns: repeat(4, 28rem);
+  grid-gap: 6rem;
+
+  /** 1350px / 16 = 84.375em */
+  @media only screen and (max-width: 84.375em) {
+    grid-gap: 4rem;
+  }
+
+  /** 1300px / 16 = 81.25em */
+  @media only screen and (max-width: 81.25em) {
+    grid-template-columns: repeat(2, 28rem);
+    grid-gap: 6rem;
+  }
+
+  /** 600px / 16 = 37.5em */
+  @media only screen and (max-width: 37.5em) {
+    grid-template-columns: 28rem;
+    grid-gap: 6rem;
+  }
+}
+
+.section-chef {
+  padding: 10rem 0;
+  grid-template-columns: repeat(2, 50rem);
+  grid-gap: 6rem;
+  background-color: #eef6ff;
+
+  background-image: linear-gradient(rgba(#eef6ff, .85), rgba(#eef6ff, .85)), url('../../img/background/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /** 1050px / 16 = 65.625em */
+  @media only screen and (max-width: 65.625em) {
+    grid-gap: 4rem;
+  }
+
+  /** 1000px / 16 = 62.5em */
+  @media only screen and (max-width: 62.5em) {
+    grid-template-columns: max-content;
+    grid-gap: 6rem;
+  }
+
+  /** 500px / 16 = 31.25em */
+  @media only screen and (max-width: 62.5em) {
+    grid-gap: 4rem;
+  }
+
+  /** 450px / 16 = 28.125em */
+  @media only screen and (max-width: 28.125em) {
+    grid-template-columns: 32rem;
+  }
+}
+
+.section-category {
+  padding: 8rem 0;
+  grid-template-columns: repeat(4, 25rem);
+  grid-gap: 6rem;
+
+  /** 1300px / 16 = 81.25em */
+  @media only screen and (max-width: 81.25em) {
+    grid-gap: 4rem;
+  }
+
+  /** 1100px / 16 = 68.75em */
+  @media only screen and (max-width: 68.75em) {
+    grid-template-columns: repeat(2, 25rem);
+    grid-gap: 6rem;
+  }
+
+  /** 600px / 16 = 37.5em */
+  @media only screen and (max-width: 37.5em) {
+    grid-gap: 4rem;
+  }
+
+  /** 550px / 16 = 34.375em */
+  @media only screen and (max-width: 34.375em) {
+    grid-template-columns: 25rem;
+  }
+}
+
+.section-hotel {
+  padding: 8rem 0;
+  grid-template-columns: repeat(3, 28rem);
+  grid-gap: 7rem;
+  background-color: #eef6ff;
+
+  background-image: linear-gradient(rgba(#eef6ff, .85), rgba(#eef6ff, .85)), url('../../img/background/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /** 950px / 16 = 59.375em */
+  @media only screen and (max-width: 59.375em) {
+    grid-gap: 4rem;
+  }
+
+  /** 900px / 16 = 56.25em */
+  @media only screen and (max-width: 56.25em) {
+    grid-template-columns: 28rem;
+    grid-gap: 7rem;
+  }
+}
+
+.section-membership {
+  padding: 8rem 0;
+  grid-template-columns: repeat(3, 37rem);
+  grid-gap: 6rem;
+
+  background-image: linear-gradient(rgba(#eef6ff, .85), rgba(#eef6ff, .85)), url('../../img/background/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /** 1300px / 16 = 81.25em */
+  @media only screen and (max-width: 81.25em) {
+    grid-template-columns: 37rem;
+    grid-gap: 7rem;
+  }
+
+  /** 450px / 16 = 28.125em */
+  @media only screen and (max-width: 28.125em) {
+    grid-template-columns: 30rem;
+  }
+}
+
+.section-cooking {
+  padding: 8rem 0;
+  grid-template-columns: 42rem 45rem;
+  grid-gap: 8rem;
+  align-items: center;
+
+  /** 950px / 16 = 59.375em */
+  @media only screen and (max-width: 59.375em) {
+    grid-gap: 6rem;
+  }
+
+  /** 900px / 16 = 56.25em */
+  @media only screen and (max-width: 56.25em) {
+    grid-template-columns: 45rem;
+  }
+
+  /** 550px / 16 = 34.375em */
+  @media only screen and (max-width: 34.375em) {
+    grid-template-columns: 40rem;
+  }
+
+  /** 450px / 16 = 28.125em */
+  @media only screen and (max-width: 28.125em) {
+    grid-template-columns: 30rem;
+    grid-gap: 4rem;
+  }
+}
